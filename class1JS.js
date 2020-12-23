@@ -53,3 +53,33 @@ for (let i = 0; i < halfloop; i++) {
   console.log("Im learning loops");
   console.log(persons2[i]);
 }
+
+//PUSH (Add an element to THE END of the array)
+
+console.warn("ADD NEW ELEMENT");
+
+persons2.push("Claudia");
+
+console.log(persons2);
+
+//UNSHIFT (Add an element to THE BEGINNING of the array)
+
+let newPerson = "Daniel";
+
+persons2.unshift(newPerson);
+
+console.log(persons2);
+
+//Add elements to an empty array
+
+let emptyArray = new Array();
+
+console.warn("Im empty");
+console.log(emptyArray);
+
+for (let i = 0; i < persons2.length; i++) {
+  emptyArray.push(persons2[i]);
+}
+
+console.warn("Im full");
+console.log(emptyArray);
