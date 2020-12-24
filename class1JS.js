@@ -140,3 +140,28 @@ function mathOperation2(a, b, c) {
 }
 total4 = mathOperation(juan, bruno); // a parameter is missing
 console.log(total4); // should return NaN
+
+//FOR INSIDE A FUNCTION
+console.warn("FOR inside a function");
+
+let students = ["juan", "bruno", "pedro"];
+
+function studentsRunning() {
+  //Initialize a function without parameters
+  for (student of students) {
+    console.log("Running");
+    console.log(student);
+  }
+}
+console.log(studentsRunning()); //Call a function without arguments
+
+let students2 = ["maria", "claudia", "bea"];
+
+function students2Running(a) {
+  //Initialize a function with parameters give us the posibility to reuse it
+  for (student of a) {
+    console.log("Running");
+    console.log(student);
+  }
+}
+console.log(students2Running(students2)); //Call a function with arguments
