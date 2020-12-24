@@ -165,3 +165,21 @@ function students2Running(a) {
   }
 }
 console.log(students2Running(students2)); //Call a function with arguments
+
+//OBJECTS
+console.warn("Objects");
+
+let alejandro = {
+  name: "alejandro", //name is the key, alejandro is the value
+  age: 29,
+  alive: true,
+  //options for large keys
+  "year-of-birth": 1991, //if we dont use "" JS its going to make the math operation
+  school_name: "Montesion",
+  "year of promotion": 2009,
+};
+console.log(alejandro);
+console.log(alejandro.name);
+console.log(alejandro.school_name);
+console.log(alejandro["year-of-birth"]);
+console.log(alejandro["year of promotion"]); // [] used to search within an object
