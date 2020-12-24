@@ -83,3 +83,25 @@ for (let i = 0; i < persons2.length; i++) {
 
 console.warn("Im full");
 console.log(emptyArray);
+
+//FUNCTIONS
+console.warn("Functions");
+
+let claudia = 7;
+let pedro = 5;
+
+function addApples(claudia, pedro) {
+  return claudia + pedro;
+}
+
+console.log(addApples(claudia, pedro)); //Add
+
+let totalSubstractApples;
+
+function substractApples(claudia, pedro) {
+  return claudia - pedro;
+}
+
+totalSubstractApples = substractApples(claudia, pedro);
+
+console.log(totalSubstractApples); //Substract
