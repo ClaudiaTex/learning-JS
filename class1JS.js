@@ -116,6 +116,7 @@ let juan = 95;
 let total1;
 let total2;
 let total3;
+let total4;
 
 function substract(a, b) {
   return a - b;
@@ -133,3 +134,9 @@ function mathOperation(a, b, c, d) {
 
 total3 = mathOperation(juan, bruno, manolo, maria);
 console.log(total3); // should return (95 + 5) - (37 - 7) = 70
+
+function mathOperation2(a, b, c) {
+  return a + b - c;
+}
+total4 = mathOperation(juan, bruno); // a parameter is missing
+console.log(total4); // should return NaN
