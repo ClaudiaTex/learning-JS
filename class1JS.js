@@ -105,3 +105,31 @@ function substractApples(claudia, pedro) {
 totalSubstractApples = substractApples(claudia, pedro);
 
 console.log(totalSubstractApples); //Substract
+
+// Its important to understand arguments and the order of the parameters in a fuction
+
+let maria = 7;
+let bruno = 5;
+let manolo = 37;
+let juan = 95;
+
+let total1;
+let total2;
+let total3;
+
+function substract(a, b) {
+  return a - b;
+}
+
+total1 = substract(manolo, juan);
+console.log(total1); // should return 37 - 95 = -58
+
+total2 = substract(juan, manolo);
+console.log(total2); // should return 95 - 37 = 58
+
+function mathOperation(a, b, c, d) {
+  return a + b - (c - d);
+}
+
+total3 = mathOperation(juan, bruno, manolo, maria);
+console.log(total3); // should return (95 + 5) - (37 - 7) = 70
