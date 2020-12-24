@@ -183,3 +183,39 @@ console.log(alejandro.name);
 console.log(alejandro.school_name);
 console.log(alejandro["year-of-birth"]);
 console.log(alejandro["year of promotion"]); // [] used to search within an object
+
+//Array of objects
+console.warn("Array of objects");
+
+let studentsClass = [
+  {
+    name: "Alejandro",
+    age: 29,
+    alive: true,
+  },
+  {
+    name: "Mario",
+    age: 39,
+    alive: true,
+  },
+  {
+    name: "Carmen",
+    age: 43,
+    alive: true,
+  },
+];
+
+console.log(studentsClass);
+
+//Loop throught an array of objects
+
+for (student of studentsClass) {
+  console.log(student.name);
+}
+
+//Edit a value of an object
+
+for (student of studentsClass) {
+  student.age = student.age + 5;
+  console.log(student.age);
+}
