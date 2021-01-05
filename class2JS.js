@@ -1,4 +1,5 @@
-/*EXAMPLE OF NESTED OBJECT*/
+//EXAMPLE OF NESTED OBJECT
+console.warn("Nested Object");
 
 let person = {
   name: "Alejandro",
@@ -24,12 +25,14 @@ let person = {
 };
 console.log(person);
 
-/*JSON: HOW TO TRANSFORM AN OBJECT IN TO JSON TO SEND INFORMATION QUICKLY*/
+//JSON: HOW TO TRANSFORM AN OBJECT IN TO JSON TO SEND INFORMATION QUICKLY
+console.warn("JSON");
 
 let personJson = JSON.stringify(person);
 console.log(personJson);
 
-/*JSON: HOW TO TRANSFORM A JSON IN TO A JS OBJECT*/
+//JSON: HOW TO TRANSFORM A JSON IN TO A JS OBJECT
+console.warn("JS OBJECT");
 
 let personObj = JSON.parse(personJson);
 console.log(personObj);
