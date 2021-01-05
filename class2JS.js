@@ -98,3 +98,13 @@ let searcher = {
 
 console.log(searcher.last_name);
 console.log(searcher.favorite_games);
+
+//...DESTRUCTURING AN OBJECT BY CLASSES
+console.warn("Destructuring objects");
+
+let { name, age, ...rest } = searcher;
+
+console.log(name);
+console.log(age);
+console.log(rest);
+//check the keys name and age aren't in the rest object in the browser console
