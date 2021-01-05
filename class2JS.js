@@ -69,3 +69,32 @@ let atleticoMadrid = new team("Atletico de Madrid", "Madrid", 1903);
 
 console.log(atleticoMadrid);
 //check that the order of keys showing on the console browser is alphabetically
+
+//HOW TO FIND PROPERTIES INSIDE OF AN OBJECT
+console.warn("Searching properties");
+
+let searcher = {
+  name: "Alejandro",
+  age: 29,
+  last_name: "Martin",
+  city: "Madrid",
+  favorite_games: [
+    {
+      name: "Fifa 20",
+      type: "Sports",
+    },
+    {
+      name: "NBA 2020",
+      type: "Sports",
+    },
+    {
+      name: "Fornite",
+      type: "Battle Royale",
+    },
+  ],
+  car: true,
+  model: "Polo",
+};
+
+console.log(searcher.last_name);
+console.log(searcher.favorite_games);
