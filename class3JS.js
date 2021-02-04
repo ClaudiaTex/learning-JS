@@ -23,21 +23,38 @@ console.log(name)
 // We can use >= (greater than or equal) on the if condition: if (name.length >= 5)
 
 /* Note that the code is repeated, comment the IF section to see correctly the use of IF-ELSE
- on the console of your browser.*/
+ on the console of your browser.
+*/
 
- // NESTED IF-ELSE
+// NESTED IF-ELSE
 
-if(name === 'Alex') {
-    console.log('Hello Alex');
-    if(name === 5){
-        console.log('Your name has 5 letters');
-    }else {
-        console.log ('Your name has 4 letters')
-    }
-}else {
-    console.log('You are not Alex')
-}
+// if(name === 'Alex') {
+//     console.log('Hello Alex');
+//     if(name === 5){
+//         console.log('Your name has 5 letters');
+//     }else {
+//         console.log ('Your name has 4 letters')
+//     }
+// }else {
+//     console.log('You are not Alex')
+// }
 
 /* Note that the code is repeated, comment the IF-ELSE section to see correctly the use of nested 
  IF-ELSE on the console of your browser.
+*/
+
+// CONDITIONAL : ELSE-IF
+
+if (name.length > 5) {
+    alert('Your name has more than 5 letters') 
+} else if(name.length === 5){
+    alert('Your name has 5 letters')
+}else{
+    alert('Your name has less than 5 letters')
+}
+
+// We can nest as many ELSE-IF as we need
+
+/* Note that the code is repeated, comment the NESTED IF-ELSE section to see correctly 
+the use of ELSE-IF on the console of your browser.
 */
