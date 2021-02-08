@@ -45,16 +45,47 @@ console.log(name)
 
 // CONDITIONAL : ELSE-IF
 
-if (name.length > 5) {
-    alert('Your name has more than 5 letters') 
-} else if(name.length === 5){
-    alert('Your name has 5 letters')
-}else{
-    alert('Your name has less than 5 letters')
-}
+// if (name.length > 5) {
+//     alert('Your name has more than 5 letters') 
+// } else if(name.length === 5){
+//     alert('Your name has 5 letters')
+// }else{
+//     alert('Your name has less than 5 letters')
+// }
 
 // We can nest as many ELSE-IF as we need
 
 /* Note that the code is repeated, comment the NESTED IF-ELSE section to see correctly 
 the use of ELSE-IF on the console of your browser.
 */
+
+//CONDITIONAL: SWITCH
+
+/*
+switch (key) {
+    case value:
+    
+        break;
+
+    default:
+        break;
+}
+*/
+
+//EXAMPLE 1:
+
+switch (name) { //variable that we want to access
+    case 'Alejandro':
+        console.log(`Hello ${name}`); 
+        // to convert variables to a string: blacktips (``), $ and open {}
+        break;
+    case 'Cesar':
+        console.log(`Hola ${name}`);
+        break;
+    case 'Lola':
+        console.log(`Hola ${name}`);
+        break;
+    default:
+        console.log('Hello world')
+        break;
+}
