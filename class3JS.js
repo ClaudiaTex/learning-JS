@@ -3,7 +3,7 @@
 /* 
 let name = prompt('Introduce your name');
 
-console.log(name)
+console.log(name);
 */
 
 /*----- CONDITIONAL : IF -----*/
@@ -152,3 +152,33 @@ You can comment too the prompt of the beginning to not interfere with your pract
 
 // "IF-ELSE / SWITCH": We use them when we know that the result will be true or false.
 
+
+/*----- WHILE / DO-WHILE -----*/
+
+// WHILE / DO-WHILE: is a conditional that is executed X times until the condition is met.
+
+let age = prompt('Introduce your age');
+
+console.log(age);
+
+// WHILE : first checks the condition and then executes the loop.
+
+/*
+while(age < 18 ) { 
+    age = prompt('Introduce your age again')
+}
+*/
+
+// Does not allow to enter as long as an age is less than 18 and it will ask the age again.
+
+// DO-WHILE
+
+//DO-WHILE: first execute the loop and then checks the condition (double question)
+
+do {
+    console.log('Wellcome!');
+    age = prompt('Please confirm your age again');
+    console.log(age);
+} while (age < 18) {
+
+}
