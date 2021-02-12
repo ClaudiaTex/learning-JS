@@ -157,9 +157,11 @@ You can comment too the prompt of the beginning to not interfere with your pract
 
 // WHILE / DO-WHILE: is a conditional that is executed X times until the condition is met.
 
+/*
 let age = prompt('Introduce your age');
 
 console.log(age);
+*/
 
 // WHILE : first checks the condition and then executes the loop.
 
@@ -175,6 +177,7 @@ while(age < 18 ) {
 
 //DO-WHILE: first execute the loop and then checks the condition (double question)
 
+/*
 do {
     console.log('Wellcome!');
     age = prompt('Please confirm your age again');
@@ -182,3 +185,22 @@ do {
 } while (age < 18) {
 
 }
+*/
+
+// EXAMPLE 1: In programming, time is counted in milliseconds. Convert to minutes.
+
+// STEP 1: divide milliseconds by 1000 to convert to seconds.
+
+// STEP 2: we use while to convert to minutes and seconds.
+let seconds = 190;
+let minutes = 0;
+
+while(seconds > 60) {
+    seconds = seconds - 60;
+    minutes = minutes + 1;
+    //minutes++; 
+    //both are correct
+}
+
+console.log(`The call has a duration of ${minutes}:${seconds}`);
+//the browser console will show 3:10
