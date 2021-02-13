@@ -192,6 +192,8 @@ do {
 // STEP 1: divide milliseconds by 1000 to convert to seconds.
 
 // STEP 2: we use while to convert to minutes and seconds.
+
+/*
 let seconds = 190;
 let minutes = 0;
 
@@ -204,3 +206,25 @@ while(seconds > 60) {
 
 console.log(`The call has a duration of ${minutes}:${seconds}`);
 //the browser console will show 3:10
+*/
+
+
+// EXAMPLE 2: Create a game: match the number.
+
+/* Remember the use of WHILE: If the condition is met it will execute the code inside, 
+otherwise it will jump to the next.*/
+
+let gameNumber = prompt('Write a number between 1 and 10');
+
+while (gameNumber < 8 ||  gameNumber > 8) {
+    gameNumber = prompt('Try again')
+}
+
+alert('Well done! the number was ' + gameNumber);
+console.log('Well done! the number was ' + gameNumber);
+
+/* When we want to ask between several things we use: || 
+(Keep in mind that with a single match will enter)*/
+
+/* Remember to comment the previous sections to correctly see the EXAMPLE 2 
+of WHILE in your browser's console.*/
