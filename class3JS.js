@@ -208,12 +208,12 @@ console.log(`The call has a duration of ${minutes}:${seconds}`);
 //the browser console will show 3:10
 */
 
-
 // EXAMPLE 2: Create a game: match the number.
 
 /* Remember the use of WHILE: If the condition is met it will execute the code inside, 
 otherwise it will jump to the next.*/
 
+/*
 let gameNumber = prompt('Write a number between 1 and 10');
 
 while (gameNumber < 8 ||  gameNumber > 8) {
@@ -222,9 +222,22 @@ while (gameNumber < 8 ||  gameNumber > 8) {
 
 alert('Well done! the number was ' + gameNumber);
 console.log('Well done! the number was ' + gameNumber);
+*/
 
 /* When we want to ask between several things we use: || 
 (Keep in mind that with a single match will enter)*/
 
 /* Remember to comment the previous sections to correctly see the EXAMPLE 2 
 of WHILE in your browser's console.*/
+
+
+/*----- DEBUGGING -----*/
+
+/* DEBUGGIN is the process of finding and resolving bugs (defects or problems).
+ To find that bugs we use stopping points on our code in the browser's console 
+ to see how the code is running.*/
+
+ //STEP 1: Open your browser's console.
+ //STEP 2: Go to Sources and select your JS file.
+ //STEP 3: Mark the breaking points on the left side of the lines of code you want to check.
+ //STEP 4: Refresh the page, now you can see each code execution point by clicking the play button.
