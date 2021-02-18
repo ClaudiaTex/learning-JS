@@ -33,6 +33,7 @@ let products = [Xbox, Axe, IceBlue, Iphone_X, IMac, Ball, Bike, Newspaper];
 console.warn('Array of products');
 console.log(products);
 
+
 /*----- Methods to loop through an array without using FOR-----*/
 
 // forEach: it's like a normal FOR but with different syntax (simpler)
@@ -59,3 +60,32 @@ products.forEach(function(product){
 
 console.warn('Hygiene products are from EEUU');
 console.log(products);
+
+
+// .map: is to modify data from an array and store it in a new one (without modifying the original array)
+console.warn('.map');
+
+let objNewPrice = products.map((product, index) =>{
+    //Arrow function. When it is a single argument, no parentheses are needed.
+    product.newPrice = products.price + 200;//we have created a new property inside the object
+    product.index = index;
+    return product;//Don't forget: always return something
+});
+
+console.log(objNewPrice);
+
+//the DIFFERENCE between FOREACH and MAP is that map creates a new variable (without modifying the original array).
+
+/*PLEASE NOTE: If we did not work with classes in this example, we would not modify the original and 
+we could see the two arrays, one unmodified and the other with modifications.*/
+
+//Please check out this example to see how .map works properly.
+console.warn('.map does not modify the original array');
+
+let numbers = [1, 5, 10, 15];
+let doubles = numbers.map(function(x) {
+   return x * 2;
+});
+
+console.log(numbers);
+console.log(doubles)
