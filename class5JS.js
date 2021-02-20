@@ -107,3 +107,22 @@ let findingObj = products.find(product => product.type === 'Videogames');
 
 console.warn('Short version');
 console.log(findingObj);
+
+
+// .filter: finds ALL the elements that match our search and returns them (loops through the entire array)
+
+let findObjs = products.filter(product =>{
+    return  product.type === 'Computing'
+});
+
+console.warn('.filter');
+console.log(findObjs);
+
+//Short version
+
+let findingObjs = products.filter(product => product.type === 'Press');
+
+console.warn('Short version');
+console.log(findingObjs);
+
+//FIND & FILTER are easier to read than a FOR
