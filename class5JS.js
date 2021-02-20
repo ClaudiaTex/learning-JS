@@ -67,7 +67,7 @@ console.warn('.map');
 
 let objNewPrice = products.map((product, index) =>{
     //Arrow function. When it is a single argument, no parentheses are needed.
-    product.newPrice = products.price + 200;//we have created a new property inside the object
+    product.newPrice = product.price + 200; //we have created a new property inside the object
     product.index = index;
     return product;//Don't forget: always return something
 });
@@ -89,3 +89,21 @@ let doubles = numbers.map(function(x) {
 
 console.log(numbers);
 console.log(doubles)
+
+
+/* .find : finds only the FIRSt element that matches our search and returns it. 
+As soon as it finds it, it cuts the loop, it does not go through the rest of the objects.*/
+
+let findObj = products.find(product =>{
+    return product.type === 'Hygiene'
+})
+
+console.warn('.find');
+console.log(findObj);
+
+// Short version (1 code line)
+
+let findingObj = products.find(product => product.type === 'Videogames');
+
+console.warn('Short version');
+console.log(findingObj);
