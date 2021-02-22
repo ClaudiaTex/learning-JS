@@ -19,7 +19,7 @@ let Axe = new product('Axe Blue', 'Axe', 4.5, 'Hygiene');
 let IceBlue = new product('Ice Blue', 'Williams', 3.29, 'Hygiene');
 let Iphone_X = new product('Iphone_X', 'Mac', 600, 'Computing');
 let IMac = new product('IMac', 'Mac', 1400, 'Computing');
-let Ball = new product('Breack Bones', 'MiKasa', 36, 'Sports');
+let Ball = new product('Break Bones', 'MiKasa', 36, 'Sports');
 let Bike = new product('Bike-BTT', 'ROCKRIDER', 200, 'Sports');
 let Newspaper = new product('New York Times', 'NYT', 2, 'Press');
 
@@ -201,3 +201,25 @@ console.log(expensiveObject);
 
 /* Remember that .FIND only shows the first object with that price if you want to make sure 
 that it is not the only product with that price, it is better to use .FILTER */
+
+
+// Searcher using .INCLUDES.
+
+let searcher =  products.filter(p =>{
+    return p.name.toUpperCase().includes('break'.toUpperCase()); 
+    /* INCLUDES is KEY SENSITIVE, so we have to use toUpperCase () because if we don't put it, 
+    we would have to write it strictly just like it's written on the object. When putting it, 
+    what it does is change everything to uppercase and when modifying it no longer discriminates between
+    Upper and lower case. You could also convert everything to lowercase and it would work the same way,
+    for that we would use toLowerCase ()*/
+})
+  
+console.warn('Searching: Break Bones');
+console.log(searcher);
+
+/* PRACTICE:
+    How would you create a search engine using a prompt as an interface 
+    to search the products in our array, being able to search for them written in any way?
+
+    TRY TO DO IT BEFORE CONTINUING
+*/
