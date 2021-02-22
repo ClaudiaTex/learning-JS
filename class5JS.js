@@ -223,3 +223,14 @@ console.log(searcher);
 
     TRY TO DO IT BEFORE CONTINUING
 */
+
+//SOLUTION:
+
+let toSearch = prompt('Introduce a product');
+
+let promptSearcher =  products.filter(p =>{
+    return p.name.toUpperCase().includes(`${toSearch}`.toUpperCase()); 
+})
+
+console.warn('Searcher result');
+console.log(promptSearcher);
