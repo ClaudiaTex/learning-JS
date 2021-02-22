@@ -126,3 +126,50 @@ console.warn('Short version');
 console.log(findingObjs);
 
 //FIND & FILTER are easier to read than a FOR
+
+
+/* REDUCE serves to COMPARE, always receives 2 arguments:
+1 - the variable that we want to compare.
+2 - the variable that we are going to assign in each loop.
+*/
+
+let longestName = products.reduce((accumulator, product)=>{ 
+    /* ex: accumulator. We create a variable, we give it a name, it will automatically know that 
+    it is going to store the information there. We call it an accumulator because it will start 
+    with a value that will change as it goes throught the array*/
+
+    if(accumulator.length < product.name.length){ //we are assinging a value
+     /* If the number of letters in the accumulator (0 at the beginning) 
+        is less than the number of letters in the product name,
+        it will store the new value in the accumulator and compare it until 
+        reaches the higgest the name with the most number of characters.*/
+
+      return accumulator = product.name;
+     /* It returns me: that the value now of the accumulator will be equal to the name with the highest 
+        number of characters (IF IT IS GREATER, IT WILL BE UPDATED), so the accumulator will always have 
+        a single value, in this case only 1 name, to compare with the next one.*/
+
+    } else {
+      return accumulator;
+     /* If the next one does not have a size greater than the current value of the accumulator, it will 
+        show us the last one that has been stored (the one with the largest number of letters by the moment).
+        Note that: if the value has the same number of letters, in this case, it will still return the previous value.
+        Because we have put in our condition <, not <= */
+    }
+},'');// AND HERE WE INITIALIZE THE VARIABLE ACCUMULATOR.
+
+/* We ALWAYS equate the variable with something to initialize it. In this case, a variable that has an empty string,
+   it will return a name. If we look for a number we equate it to the number 0 */
+
+console.warn('Accumulator (REDUCE)')
+console.log(longestName);
+//It will show us by console the name of the object with the highest number of characters (New York Times).
+
+
+/* Debugging an accumulator:
+  TO FULLY UNDERSTAND THIS, YOU HAVE TO DEBUG TO SEE HOW THE BROWSER EXECUTES THE CODE
+  Remember that to debug we go to the browser console and click on sources.
+  To select the line of code we want to explore, click on the line number and a check mark will appear next to it.
+  It is always better to select all the lines and thus we will see step by step how the browser reads our code.
+  With play / pause we will see step by step how the browser reads the code.
+*/
