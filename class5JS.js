@@ -234,3 +234,22 @@ let promptSearcher =  products.filter(p =>{
 
 console.warn('Searcher result');
 console.log(promptSearcher);
+
+// JOIN: is used to convert an array into a text string
+  
+let elements = ['Fire', 'Air', 'Water'];
+  
+console.warn('Using JOIN');
+console.log(elements.join()); // if we leave the () without ANYTHING it will separate it by COMAS
+// expected output: "Fire,Air,Water"
+  
+console.log(elements.join('')); // if inside the () we put '' it will put it all together
+// expected output: "FireAirWater"
+  
+console.log(elements.join('-')); // here what it will do is separate each element with a dash
+// expected output: "Fire-Air-Water"
+  
+console.log(elements.join('/')); // here it will separate them with /
+// expected output: "Fire/Air/Water"
+
+// the character we put inside ('') will work as a separator.
