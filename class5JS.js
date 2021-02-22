@@ -173,3 +173,31 @@ console.log(longestName);
   It is always better to select all the lines and thus we will see step by step how the browser reads our code.
   With play / pause we will see step by step how the browser reads the code.
 */
+
+// Using REDUCE with numbers
+
+let expensivePrice = products.reduce((accumulator, product)=>{
+    if(accumulator < product.price){
+      return accumulator = product.price; 
+    } else {
+      return accumulator;
+    }
+},0);//We set the accumulator equal to the number 0 because we are looking for a number.
+
+console.warn('Price accumulator (REDUCE)');
+console.log(expensivePrice);// It will show the price of the object stored in the variable
+
+//If we want to know the name of the product that has that price, we use a .FIND
+
+let expensiveObject = products.find(product =>{
+    return product.price === expensivePrice
+    /* After a return we cannot write anything because the browser will not read it.
+    What it does on the return will consider that it is the last thing it does there, 
+    it will leave and will not continue reading */
+});
+
+console.warn('I am the most expensive product');
+console.log(expensiveObject);
+
+/* Remember that .FIND only shows the first object with that price if you want to make sure 
+that it is not the only product with that price, it is better to use .FILTER */
