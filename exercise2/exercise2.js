@@ -1,4 +1,4 @@
-/*------EXERCISE 2 (EXPLANATION)———*/
+/*------EXERCISE 2 (SOLUTION)———*/
 
 let movies = [
     {
@@ -412,79 +412,26 @@ console.log(movies);
 
 //STEP 1: Create an array that returns the movie titles.
 
-/*
-let newArray = originalArray.map(variable => {
-    return what we ask for?
-});
-*/
-
-let movieTitles = movies.map(movie => {
-    return movie.title
-});
-
-/* Remember that .map is a FOR, every time it enters the movies array, it saves the position of the movie in 
-the movie variable, then we ask in the return for the title of the movie saved in the movie variable. All movie 
-titles stored in the movie variable will be in the new array: movieTitles.*/
-
-//SHORT VERSION
-// let movieTitles = movies.map(movie => movie.title);
+let movieTitles = movies.map(movie => movie.title);
 
 console.warn('Movie titles array');
 console.log(movieTitles);
-// REMEMBER that .map, .find, .filter and .reduce create a new array!!
-
 
 //STEP 2: Create an array of movies whose popularity is greater than 100.000
-
-/*
-let newArray = originalArray.filter(variable => {
-    return condition
-});
-*/
-
-/* LONG VERSION
-let popularityMovies = movies.filter(movie => {
-    return movie.popularity > 100.000
-});
-*/
 
 let popularityMovies = movies.filter(movie => movie.popularity > 100.000)
 
 console.warn('Popularity > 100.000');
 console.log(popularityMovies);
 
-
 // STEP 3: Create an array that returns the first movie with a vote value greater than 8
-
-/*
-let newArray = originalArray.find(variable => {
-    return condition
-});
-*/
-
-/* LONG VERSION
-let voteAverageMovie = movies.find(movie => {
-    return movie.vote_average > 8
-});
-*/
 
 let voteAverageMovie = movies.find(movie => movie.vote_average > 8)
 
 console.warn('vote average > 8');
 console.log(voteAverageMovie);
 
-
 // STEP 4: Create an array with the movie with the highest number of votes (comparative)
-
-/*
-let newArray = originalArray.property((accumulator, variable)=>{
-    if(accumulator < numberOfVotes){
-      return accumulator = numberOfvotes; 
-    } else {
-      return accumulator;
-    }
-},initializingAccumulator);
-*/
 
 let moreVotes = movies.reduce((accumulator, movie)=>{
     if(accumulator < movie.vote_count){
@@ -492,18 +439,10 @@ let moreVotes = movies.reduce((accumulator, movie)=>{
     } else {
       return accumulator;
     }
-},0); //We set the accumulator equal to the number 0 because we are looking for a number.
+},0); 
 
 console.warn('highest number of votes');
 console.log(moreVotes);
-
-/*
-let newArray = originalArray.find(variable => {
-    return condition
-});
-
-Note that you can use filter to!
-*/
 
 let mostVotedMovie = movies.find(movie => movie.vote_count === moreVotes)
 
