@@ -150,3 +150,10 @@ classification.pop();
 
 console.warn("Classification without the winner");
 console.log(classification);
+
+/*----REVERSE: reorganizing the teams classification from highest to lowest score----*/
+
+classification.reverse();
+
+console.warn("Arranged classification without the winner");
+console.log(classification);
