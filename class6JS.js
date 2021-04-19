@@ -107,3 +107,9 @@ let teams = [
 
 console.warn("Teams Array");
 console.log(teams);
+
+/*-----Finding names by position----*/
+
+console.warn("I am in position 7");
+console.log(teams[7].name); // this will display the name of the object at a specific position (remember positions start at 0)
+console.log(teams.indexOf(getafe));
