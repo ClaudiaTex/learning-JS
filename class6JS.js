@@ -142,3 +142,11 @@ classification.sort(function (a, b) {
 console.warn("Using sort property");
 console.log(classification); // this function will order the teams from lowest to highest score.
 console.log(teams); // now you can check the differences between the original and the new array.
+
+/*----POP: Extracting the team with the best score----*/
+
+//POP property extracts the last element from an array
+classification.pop();
+
+console.warn("Classification without the winner");
+console.log(classification);
