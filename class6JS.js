@@ -112,4 +112,33 @@ console.log(teams);
 
 console.warn("I am in position 7");
 console.log(teams[7].name); // this will display the name of the object at a specific position (remember positions start at 0)
-console.log(teams.indexOf(getafe));
+
+/*----SORT: classify objects by the value of a key-----*/
+
+//First we are going to make a copy of the original array to check the differences.
+
+let classification = []; //initializing the new array
+
+// for (let team of teams) {
+//   classification.push({ ...team });
+// }
+
+classification.push(...teams); //there is no for because in this case it does not modify the original
+
+console.warn("Teams Copy");
+console.log(classification);
+
+// Using SORT to rank teams by their points (PTS)
+
+// function comparing(a, b) {
+//     return a.PTS - b.PTS;
+// }
+// classification.sort(comparing);
+
+classification.sort(function (a, b) {
+  return a.PTS - b.PTS; // this will compare the points between two teams until reorganize all of them.
+});
+
+console.warn("Using sort property");
+console.log(classification); // this function will order the teams from lowest to highest score.
+console.log(teams); // now you can check the differences between the original and the new array.
