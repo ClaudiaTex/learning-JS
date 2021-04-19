@@ -157,3 +157,33 @@ classification.reverse();
 
 console.warn("Arranged classification without the winner");
 console.log(classification);
+
+/*----UNSHIFT: adding the winner to the classification----*/
+
+//UNSHIFT: inserts at the beggining of the array one or more elements or objects.
+
+// let realMadrid = {
+//   name: "Real Madrid",
+//   PJ: 34,
+//   PG: 23,
+//   PE: 8,
+//   PP: 3,
+//   PTS: 77,
+//   GF: 62,
+//   GC: 21,
+// };
+// classification.unshift(realMadrid);
+
+classification.unshift({
+  name: "Real Madrid",
+  PJ: 34,
+  PG: 23,
+  PE: 8,
+  PP: 3,
+  PTS: 77,
+  GF: 62,
+  GC: 21,
+});
+
+console.warn("Classification");
+console.log(classification);
