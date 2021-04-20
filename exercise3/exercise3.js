@@ -1,4 +1,4 @@
-/*---- EXERCISE 3 (EXPLANATION) ----*/
+/*---- EXERCISE 3 (SOLUTION) ----*/
 
 // Array of students
 
